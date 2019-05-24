@@ -10,10 +10,10 @@ class permissController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
-    public function index()
+     */ 
+    public function index($nombre,$slug=false)
     {
-        return view('permission',compact('nombre'));
+        return view('permission',compact('nombre','slug'));
     }
 
     /**
